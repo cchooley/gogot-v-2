@@ -3,6 +3,8 @@ import { AuthService } from '../../services/auth.service';
 import { Router, Params } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
+import { RegisterComponent } from '../register/register.component'
+
 @Component({
   selector: 'page-login',
   templateUrl: 'login.component.html',
