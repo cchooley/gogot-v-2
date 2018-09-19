@@ -23,24 +23,9 @@
                 <label class="error">{{errorMessage}}</label>
                 <label class="success">{{successMessage}}</label>
               </div>
-              <div class="row">
-                <div class="col-md-4 col-md-offset-4">
-                  <button type="submit" (click)="tryRegister(registerForm.value)" class="btn btn-primary btn-block">Register your Account</button>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-4 col-md-offset-4">
-                  <button type="button" class="btn btn-primary btn-block" (click)="tryFacebookLogin()">
-                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                  </button>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-4 col-md-offset-4">
-                  <button type="button" class="btn btn-danger btn-block" (click)="tryGoogleLogin()">
-                    <i class="fa fa-google" aria-hidden="true"></i>
-                  </button>
-                </div>
+              <div>
+                <button type="submit" (click)="tryRegister(registerForm.value)" 
+                  class="btn btn-primary btn-block">Register</button>
               </div>
             </form>
           </div>

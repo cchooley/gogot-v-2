@@ -4,6 +4,7 @@
 
 export const environment = {
   production: false,
+  stripeKey: 'sk_test_tHFaeZ2ujAXCT43lFKsknElS', //test key
   firebase: {
     apiKey: "AIzaSyAqu1y5GPUO_Q6LoPuJ7qLZNQImiGg-PLo",
     authDomain: "gogot-v2.firebaseapp.com",

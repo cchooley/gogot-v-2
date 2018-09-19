@@ -8,6 +8,7 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { environment } from '../environments/environment';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { PaymentModule } from './payments/payment/payment.module'
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
@@ -19,6 +20,7 @@ import { UserResolver } from './components/user/user.resolver';
 import { AuthGuard } from './services/auth.guard';
 import { AuthService } from './services/auth.service';
 import { UserService } from './services/user.service';
+import { MakePaymentComponent } from './payments/make-payment/make-payment.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { UserService } from './services/user.service';
     LoginComponent,
     RegisterComponent,
     UserComponent,
-    LandingComponent
+    LandingComponent,
+    MakePaymentComponent
   ],
   imports: [
     BrowserModule, 
@@ -35,7 +38,8 @@ import { UserService } from './services/user.service';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule, // imports firebase/firestore, only needed for database features
     AngularFireAuthModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    PaymentModule
   ],
   providers: [AuthService, UserService, UserResolver, AuthGuard],
   bootstrap: [AppComponent],
