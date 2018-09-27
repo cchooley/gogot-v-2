@@ -1,0 +1,25 @@
+main {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../../assets/gogotlanding.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 210vmin;
+    width: 100%;
+}
+
+section {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(139, 176, 193, 0.5);
+    padding: 3vh;
+    outline: 1px solid white;
+}
+
+h1 {
+    color: white
+}
